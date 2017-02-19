@@ -8,5 +8,4 @@
 TEST(Test, _1)
 {
     std::cout << "Ok Test 1" << std::endl;
-    ASSERT_TRUE(false);
 }
