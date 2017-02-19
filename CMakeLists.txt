@@ -31,4 +31,5 @@ add_executable(BaseClient ${SOURCE_FILES} ${INCLUDES})
 add_executable( runUnitTests test/test.cpp )
 # Link test executable against gtest & gtest_main
 target_link_libraries(runUnitTests gtest gtest_main)
-add_test( runUnitTests runUnitTests )
+add_test(  MyTest1
+           runUnitTests --gtest_output=xml:XMLTest/MyTest1.xml )
